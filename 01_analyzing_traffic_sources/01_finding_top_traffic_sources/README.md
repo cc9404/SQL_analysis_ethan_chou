@@ -32,26 +32,3 @@ ORDER BY
 
 ---
 
-## 📊 Query Results (Data Output)
-
-* **Raw Data Output:** 📄 [`finding_top_traffic_sources.csv`](./finding_top_traffic_sources.csv)
-
-| utm_source | utm_campaign | http_referer | number_of_sessions |
-| :--- | :--- | :--- | :---: |
-| **gsearch** | nonbrand | `https://www.gsearch.com` | **3,613** |
-| *NULL* | *NULL* | *NULL* | 28 |
-| *NULL* | *NULL* | `https://www.gsearch.com` | 27 |
-| **gsearch** | brand | `https://www.gsearch.com` | 26 |
-| *NULL* | *NULL* | `https://www.bsearch.com` | 7 |
-| **bsearch** | brand | `https://www.bsearch.com` | 7 |
-
----
-
-## 💡 Key Business Insights
-
-1. **Primary Growth Engine**:
-   * **`gsearch / nonbrand`** is driving the vast majority of traffic with **3,613 sessions** (~97% of paid traffic), making it the single most critical acquisition channel.
-2. **Direct & Organic Traffic**:
-   * Organic and direct search traffic (NULL referers/campaigns) remain very low in volume (under 30 sessions each), confirming that the business relies heavily on paid search at this early stage.
-3. **Next Actionable Step**:
-   * Focus deep-dive analysis specifically on **`gsearch / nonbrand`** to measure its **Conversion Rate (CVR)** and evaluate cost efficiency.
