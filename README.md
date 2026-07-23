@@ -18,7 +18,7 @@ An end-to-end business performance analysis for **Maven Fuzzy Factory** (a synth
 
 ### 🗂️ Analysis Sub-topics & SQL Scripts
 
-| Sub-topic / Module | Business Focus | SQL Script Directory | Key Analytical Metrics |
+| Sub-topic | Business Focus | SQL Script Directory | Key Analytical Metrics |
 | :--- | :--- | :--- | :--- |
 |     **1. Analyzing Traffic Sources**     | Campaign ROI & Bid Optimization |  [`01_analyzing_traffic_sources`](./01_analyzing_traffic_sources/) | Sessions, Orders, CVR by `utm_source`/`campaign`, Device Segmentation |
 |     **2. Analyzing Website Performance**     | Landing Page & Funnel Optimization |  [`02_website_performance.sql`](./02_website_performance.sql) | Entry Pages, Bounce Rates, Funnel Drop-off Rates, A/B Test Lift |
