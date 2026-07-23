@@ -20,7 +20,7 @@ An end-to-end business performance analysis for **Maven Fuzzy Factory** (a synth
 
 | Sub-topic / Module | Business Focus | SQL Script Directory | Key Analytical Metrics |
 | :--- | :--- | :--- | :--- |
-| **1. Analyzing Traffic Sources** | Campaign ROI & Bid Optimization | 📂 [01_analyzing_traffic_sources](./01_analyzing_traffic_sources/) | Sessions, Orders, CVR by `utm_source`/`campaign`, Device Segmentation |
+| **1. Analyzing Traffic Sources** | Campaign ROI & Bid Optimization | 🔗 [`01_analyzing_traffic_sources`](./01_analyzing_traffic_sources/) | Sessions, Orders, CVR by `utm_source`/`campaign`, Device Segmentation |
 | **2. Analyzing Website Performance** | Landing Page & Funnel Optimization | 🔗 [`02_website_performance.sql`](./02_website_performance.sql) | Entry Pages, Bounce Rates, Funnel Drop-off Rates, A/B Test Lift |
 | **3. Analyzing Channel Portfolios** | Multi-channel Synergy & Organic Mix | 🔗 [`03_channel_portfolios.sql`](./03_channel_portfolios.sql) | Paid vs. Direct/Organic Mix, Cross-channel Bid Efficiency |
 | **4. Business Patterns & Seasonality** | Temporal Trends & Cyclicality | 🔗 [`04_seasonality_patterns.sql`](./04_seasonality_patterns.sql) | Hour-of-Day / Day-of-Week Traffic, Holiday Sales Volume Spikes |
