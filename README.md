@@ -1,4 +1,4 @@
-# 🗄️ SQL Data Analytics Portfolio
+# Ethan's SQL Data Analytics Portfolio
 
 Welcome to my SQL project hub! This repository contains end-to-end SQL data analysis projects focused on solving real-world business problems, optimizing marketing campaigns, and deriving e-commerce product insights.
 
