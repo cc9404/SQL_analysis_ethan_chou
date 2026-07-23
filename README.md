@@ -6,12 +6,12 @@ Welcome to my SQL project hub! This repository contains end-to-end SQL data anal
 
 ## 📚 Table of Contents
 
-- [Project 1: Maven Fuzzy Factory (E-Commerce Analytics)](#-project-1-maven-fuzzy-factory-e-commerce-data--marketing-analytics)
+- [Project 1: Fuzzy Factory (E-Commerce Analytics)](#-project-1-maven-fuzzy-factory-e-commerce-data--marketing-analytics)
 - [Tools & Tech Stack](#-tools--tech-stack)
 
 ---
 
-## 🛒 Project 1: Maven Fuzzy Factory (E-Commerce Data & Marketing Analytics)
+## 🛒 Project 1: Fuzzy Factory (E-Commerce Data & Marketing Analytics)
 
 ### 📌 Overview
 An end-to-end business performance analysis for **Maven Fuzzy Factory** (a synthetic e-commerce retailer). Using advanced MySQL queries, this project evaluates website traffic quality, conversion funnels, channel efficiency, product cross-selling, and customer retention.
