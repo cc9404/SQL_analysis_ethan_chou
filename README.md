@@ -1,32 +1,35 @@
-# Ethan's Data Analytics Portfolio
+# 🗄️ SQL Data Analytics Portfolio
 
-Welcome to my data portfolio! Here, I document a summary of my projects in data analysis, marketing analytics, and SQL query optimization.
+Welcome to my SQL project hub! This repository contains end-to-end SQL data analysis projects focused on solving real-world business problems, optimizing marketing campaigns, and deriving e-commerce product insights.
 
 ---
 
 ## 📚 Table of Contents
 
-- [SQL & E-Commerce Analytics](#sql--e-commerce-analytics)
-- [Tools & Tech Stack](#tools--tech-stack)
+- [Project 1: Maven Fuzzy Factory (E-Commerce Analytics)](#-project-1-maven-fuzzy-factory-e-commerce-data--marketing-analytics)
+- [Tools & Tech Stack](#-tools--tech-stack)
 
 ---
 
-## SQL & E-Commerce Analytics
+## 🛒 Project 1: Maven Fuzzy Factory (E-Commerce Data & Marketing Analytics)
 
-| Project Link | Area of Analysis | Tools | Project Description |
+### 📌 Overview
+An end-to-end business performance analysis for **Maven Fuzzy Factory** (a synthetic e-commerce retailer). Using advanced MySQL queries, this project evaluates website traffic quality, conversion funnels, channel efficiency, product cross-selling, and customer retention.
+
+### 🗂️ Analysis Sub-topics & SQL Scripts
+
+| Sub-topic / Module | Business Focus | SQL Script | Key Analytical Metrics |
 | :--- | :--- | :--- | :--- |
-| 🛒 [E-Commerce Traffic Sources Analysis](./01_traffic_sources_analysis.sql) | Traffic Source Optimization, CVR, Bid Strategy | MySQL | Analyzed web traffic sources and campaign effectiveness for Maven Fuzzy Factory. Calculated conversion rates across channels to optimize paid search bids and budget allocation. |
-| 🌐 [Website Performance & Conversion Funnel](./02_website_performance.sql) | Bounce Rate, Landing Page Testing, Conversion Funnels | MySQL | Evaluated top entry pages, landing page bounce rates, and full-funnel drop-offs to optimize user experience and increase checkout conversion rates. |
-| 📣 [Channel Portfolio Analysis](./03_channel_portfolios.sql) | Cross-Channel Performance, Direct vs. Paid Traffic | MySQL | Analyzed channel mix and user acquisition trends to compare paid channels against organic/direct traffic and evaluate marketing channel synergy. |
-| 📅 [Business Patterns & Seasonality](./04_seasonality_patterns.sql) | Seasonality, Day-of-Week Trends, Business Cyclicality | MySQL | Examined annual and weekly order patterns to identify peak shopping hours and seasonal sales spikes for operational planning. |
-| 📦 [Product-Level Sales Analysis](./05_product_level_analysis.sql) | Product Cross-Selling, Refund Rates, Portfolio Expansion | MySQL | Analyzed product sales velocity, refund rates, and user cross-selling behavior to optimize product bundling and cross-sell pathways. |
-| 🔄 [User Behavior & Repeat Sessions](./06_user_repeat_behavior.sql) | Customer Retention, Repeat Purchase, LTV Drivers | MySQL | Identified repeat visitor behavior, time-to-repeat metrics, and repeat conversion rates to inform customer retention strategies. |
-| 🏆 [Mid & Final Business Capstone](./07_final_capstone.sql) | Executive Reporting, End-to-End E-Commerce Strategy | MySQL | Comprehensive end-to-end e-commerce performance review combining traffic, product, and customer metrics to deliver actionable growth recommendations. |
+| **1. Analyzing Traffic Sources** | Campaign ROI & Bid Optimization | 🔗 [`01_traffic_sources.sql`](./01_traffic_sources.sql) | Sessions, Orders, CVR by `utm_source`/`campaign`, Device Segmentation |
+| **2. Analyzing Website Performance** | Landing Page & Funnel Optimization | 🔗 [`02_website_performance.sql`](./02_website_performance.sql) | Entry Pages, Bounce Rates, Funnel Drop-off Rates, A/B Test Lift |
+| **3. Analyzing Channel Portfolios** | Multi-channel Synergy & Organic Mix | 🔗 [`03_channel_portfolios.sql`](./03_channel_portfolios.sql) | Paid vs. Direct/Organic Mix, Cross-channel Bid Efficiency |
+| **4. Business Patterns & Seasonality** | Temporal Trends & Cyclicality | 🔗 [`04_seasonality_patterns.sql`](./04_seasonality_patterns.sql) | Hour-of-Day / Day-of-Week Traffic, Holiday Sales Volume Spikes |
+| **5. Product-Level Analysis** | Product Performance & Cross-selling | 🔗 [`05_product_level_analysis.sql`](./05_product_level_analysis.sql) | Product Sales Velocity, Cross-sell Funnels, Refund Rates, AOV |
+| **6. User-Level Analysis** | Retention & Repeat Behavior | 🔗 [`06_user_repeat_behavior.sql`](./06_user_repeat_behavior.sql) | Repeat Visitor Rates, Time-to-Repeat, Repeat CVR |
 
 ---
 
 ## 🛠️ Tools & Tech Stack
 
-* **Database & Querying:** MySQL Workbench (Advanced SQL, CTEs, Window Functions, Aggregate Analysis)
-* **Data Visualization:** Tableau Public / Looker Studio
-* **Version Control:** GitHub
+* **Database Engine:** MySQL / MySQL Workbench
+* **SQL Skills Showcase:** Advanced Joins, Aggregate Functions, CTEs (Common Table Expressions), Window Functions, Subqueries, Date & String Transformations.
