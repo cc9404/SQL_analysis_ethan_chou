@@ -1,4 +1,4 @@
-# 🗺️ Data Analytics Portfolio
+# Ethan's Data Analytics Portfolio
 
 Welcome to my data portfolio! Here, I document a summary of my projects in data analysis, marketing analytics, and SQL query optimization.
 
