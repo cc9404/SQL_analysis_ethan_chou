@@ -1,2 +1,10 @@
-# fuzzy-factory-sql-analysis
-Advanced MySQL data analysis for e-commerce performance, traffic source optimization, conversion funnels, and customer behavior using Maven Fuzzy Factory dataset.
+# 🗺️ Data Analytics Portfolio
+
+Welcome to my data portfolio! Here, I document a summary of my projects in data analysis, marketing analytics, and SQL query optimization.
+
+---
+
+## 📚 Table of Contents
+
+- [SQL & E-Commerce Analytics](#sql--e-commerce-analytics)
+- [Tools & Tech Stack](#tools--tech-stack)
