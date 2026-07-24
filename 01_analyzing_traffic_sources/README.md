@@ -6,7 +6,7 @@ This folder contains all SQL scripts and output datasets for analyzing traffic a
 
 ## 📊 Core Modules & SQL Scripts
 
-| # | Core Module Link | SQL Script(s) | Data Output(s) | Description |
+| # | Module Link | SQL Script(s) | Data Output(s) | Description |
 | :-: | :--- | :--- | :-: | :--- |
 | **1** | [Finding Top Traffic Sources](./01_finding_top_traffic_sources/) | [`finding_top_traffic_sources.sql`](./01_finding_top_traffic_sources/finding_top_traffic_sources.sql) | [`CSV`](./01_finding_top_traffic_sources/finding_top_traffic_sources.csv) | Identify primary channels driving high-volume website sessions. |
 | **2** | [Traffic Source Conversion Rates](./02_traffic_source_conversion_rates/) | [`traffic_source_conversion_rates.sql`](./02_traffic_source_conversion_rates/traffic_source_conversion_rates.sql) | [`CSV`](./02_traffic_source_conversion_rates/traffic_source_conversion_rates.csv) | Calculate CVR across sources by joining sessions with orders data. |
