@@ -17,7 +17,7 @@ Following the initial CVR analysis, management implemented bid adjustments for `
 | Part | Analysis Focus | SQL Script | Data Output |
 | :---: | :--- | :--- | :---: |
 | **1** | Traffic Source Trending (Bid Reduction Impact) | [`traffic_source_trending.sql`](./traffic_source_trending.sql) | [`CSV 1`](./traffic_source_trending.csv) |
-| **2** | Trend Analysis & Data Pivoting | [`bid_optimization_and_trend_analysis.sql`](./bid_optimization_and_trend_analysis.sql) | [`CSV 2`](./bid_optimization_and_trend_analysis.csv) |
+| **2** | Trend Analysis | [`bid_optimization_and_trend_analysis.sql`](./bid_optimization_and_trend_analysis.sql) | [`CSV 2`](./bid_optimization_and_trend_analysis.csv) |
 | **3** | Granular Segment Trending (Desktop vs. Mobile) | [`trending_with_granular_segments.sql`](./trending_with_granular_segments.sql) | [`CSV 3`](./trending_with_granular_segments.csv) |
 
 ---
