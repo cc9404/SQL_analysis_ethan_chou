@@ -1,6 +1,6 @@
 # Sub-topic 1: Analyzing Traffic Sources
 
-This folder contains all SQL scripts and output datasets for analyzing traffic acquisition, source conversion rates, trending, and bid optimization for Maven Fuzzy Factory.
+This folder contains all SQL scripts and output datasets for analyzing traffic acquisition, source conversion rates, trending, and bid optimization for Fuzzy Factory.
 
 ---
 
