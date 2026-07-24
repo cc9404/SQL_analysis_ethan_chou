@@ -6,7 +6,7 @@ This module determines the primary entry points (landing pages) across all user 
 
 ## 📌 Business Problem & Context
 
-Following up on top viewed pages, leadership wants to confirm whether `/home` acts as the exclusive landing page for all incoming traffic[cite: 2, 3]. Identifying entry page distribution allows the team to evaluate whether the homepage provides the optimal initial user experience or if dedicated landing pages should be introduced.
+Following up on top viewed pages, leadership wants to confirm whether `/home` acts as the exclusive landing page for all incoming traffic. Identifying entry page distribution allows the team to evaluate whether the homepage provides the optimal initial user experience or if dedicated landing pages should be introduced.
 
 ---
 
