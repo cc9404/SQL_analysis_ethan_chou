@@ -22,26 +22,34 @@ Following the initial CVR analysis, management implemented bid adjustments for `
 
 ---
 
-## 📈 Traffic Source Trending
+## 📈 Part 1: Traffic Source Trending
 
 ### 💻 SQL Query & Methodology
+
 * **SQL Script:** 🔗 [`traffic_source_trending.sql`](./traffic_source_trending.sql)
-* **Goal:** Monitor weekly session trends before and after the bid reduction on `2012-04-15`.
+* **Key SQL Techniques:** `MIN(DATE())` (to extract week start dates), `COUNT(DISTINCT)`, `YEAR()` & `WEEK()` (date grouping aggregation), `WHERE` (filtering on dates, source, and campaign).
 
 ```sql
+/*
+Traffic source trending
+Based on previous conversion rate analysis, gsearch nonbrand has been bid down.
+This time, we pull gsearch nonbrand session volume by week to see if the bid changes
+have caused volume to drop at all.
+*/
+
+USE mavenfuzzyfactory;
+
 SELECT
     MIN(DATE(created_at)) AS week_start_date,
     COUNT(DISTINCT website_session_id) AS sessions
 FROM website_sessions
-WHERE created_at < '2012-05-10'
+WHERE created_at < '2012-05-10' 
   AND utm_source = 'gsearch'
   AND utm_campaign = 'nonbrand'
 GROUP BY
     YEAR(created_at),
     WEEK(created_at);
 ```
-
----
 
 ### 📊 Query Results (Data Output)
 
@@ -60,77 +68,16 @@ GROUP BY
 
 ---
 
-### Bid Optimization & Trend Analysis
+### 💡 Key Business Insights
 
-```markdown
-## 📊 Part 2: Bid Optimization & Trend Analysis
+1. **Immediate Impact of Bid Reduction:**
+   * Traffic peaked at **316 sessions** during the week of **2012-04-15**, immediately after which ad bids were reduced. Following the bid reduction, weekly session volume dropped to **234 sessions** (a ~26% decline).
 
-### 💻 SQL Query & Methodology
-* **SQL Script:** 🔗 [`bid_optimization_and_trend_analysis.sql`](./bid_optimization_and_trend_analysis.sql)
-* **Goal:** Aggregate session distribution and demonstrate data pivoting techniques.
+2. **Traffic Stabilization:**
+   * Despite the initial volume drop, traffic quickly stabilized around **280–290 sessions per week** in late April and early May, demonstrating resilient core search demand.
 
-```sql
-SELECT
-    YEAR(created_at) AS year,
-    WEEK(created_at) AS week,
-    MIN(DATE(created_at)) AS week_start,
-    COUNT(DISTINCT website_session_id) AS sessions
-FROM website_sessions
-WHERE website_session_id BETWEEN 100000 AND 115000
-GROUP BY 1, 2;
-```
----
-
-### 📊 Query Results (Data Output)
-
-* **Raw Data Output:** 📄 [`bid_optimization_and_trend_analysis.csv`](./bid_optimization_and_trend_analysis.csv)
-
-| year | week | week_start | sessions |
-| :---: | :---: | :---: | :---: |
-| **2013** | **10** | 2013-03-10 | 1,882 |
-| **2013** | **11** | 2013-03-17 | 1,780 |
-| **2013** | **12** | 2013-03-24 | 1,712 |
-| **2013** | **13** | 2013-03-31 | 1,780 |
-
----
-
-### Trending with Granular Segments
-
-```markdown
-## 📱 Part 3: Trending with Granular Segments (Desktop vs. Mobile)
-
-### 💻 SQL Query & Methodology
-* **SQL Script:** 🔗 [`trending_with_granular_segments.sql`](./trending_with_granular_segments.sql)
-* **Goal:** Breakdown `gsearch / nonbrand` traffic across device types to analyze device performance.
-
-```sql
-SELECT
-    MIN(DATE(created_at)) AS week_start_date,
-    COUNT(CASE WHEN device_type = 'desktop' THEN website_session_id ELSE NULL END) AS dtop_sessions,
-    COUNT(CASE WHEN device_type = 'mobile' THEN website_session_id ELSE NULL END) AS mob_sessions,
-    COUNT(DISTINCT website_session_id) AS total_sessions
-FROM website_sessions
-WHERE website_sessions.created_at BETWEEN '2012-04-15' AND '2012-06-09'
-  AND utm_source = 'gsearch'
-  AND utm_campaign = 'nonbrand'
-GROUP BY 
-    YEAR(created_at),
-    WEEK(created_at);
-```
-
-### 📊 Query Results (Data Output)
-
-* **Raw Data Output:** 📄 [`trending_with_granular_segments.csv`](./trending_with_granular_segments.csv)
-
-| week_start_date | dtop_sessions | mob_sessions | total_sessions |
-| :---: | :---: | :---: | :---: |
-| **2012-04-15** | 221 | 95 | **316** |
-| **2012-04-22** | 170 | 64 | **234** |
-| **2012-04-29** | 227 | 64 | **291** |
-| **2012-05-06** | 219 | 66 | **285** |
-| **2012-05-13** | 212 | 61 | **273** |
-| **2012-05-20** | 229 | 66 | **295** |
-| **2012-05-27** | 218 | 63 | **281** |
-| **2012-06-03** | 222 | 63 | **285** |
+3. **Next Actionable Steps:**
+   * **Continuous Volume Monitoring:** Keep tracking weekly session volume levels to ensure traffic doesn't drop further.
+   * **Efficiency Enhancement:** Explore optimization opportunities (e.g., ad creative improvements or landing page experience) to increase campaign efficiency and regain volume profitably.
 
 
