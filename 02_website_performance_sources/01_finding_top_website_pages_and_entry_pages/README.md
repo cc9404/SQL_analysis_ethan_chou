@@ -6,7 +6,7 @@ This module identifies the primary landing pages (entry pages) for website visit
 
 ## 📌 Business Problem & Context
 
-To optimize front-end user experience and campaign landing pages, management needs to understand where users first arrive on the Maven Fuzzy Factory website. By isolating initial pageview hits, we measure the dominance of specific entry points across early platform history.
+To optimize front-end user experience and campaign landing pages, management needs to understand where users first arrive on the Fuzzy Factory website. By isolating initial pageview hits, we measure the dominance of specific entry points across early platform history.
 
 ---
 
