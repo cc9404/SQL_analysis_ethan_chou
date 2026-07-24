@@ -137,3 +137,59 @@ GROUP BY 1, 2;
 
 ---
    
+## 📱 Part 3: Trending with Granular Segments (Desktop vs. Mobile)
+
+### 💻 SQL Query & Methodology
+
+* **SQL Script:** 🔗 [`trending_with_granular_segments.sql`](./trending_with_granular_segments.sql)
+* **Key SQL Techniques:** `COUNT(CASE WHEN ... THEN ... ELSE NULL END)` (Conditional Aggregation / Data Pivoting), `MIN(DATE())`, `GROUP BY` with `YEAR()` & `WEEK()`.
+
+```sql
+/*
+Trending with granular segments
+analyze weekly trends for both desktop and mobile
+*/
+
+USE mavenfuzzyfactory;
+
+SELECT
+    MIN(DATE(created_at)) AS week_start_date,
+    COUNT(CASE WHEN device_type = 'desktop' THEN website_session_id ELSE NULL END) AS dtop_sessions,
+    COUNT(CASE WHEN device_type = 'mobile' THEN website_session_id ELSE NULL END) AS mob_sessions,
+    COUNT(DISTINCT website_session_id) AS total_sessions
+FROM website_sessions
+WHERE website_sessions.created_at BETWEEN '2012-04-15' AND '2012-06-09'
+  AND utm_source = 'gsearch'
+  AND utm_campaign = 'nonbrand'
+GROUP BY 
+    YEAR(created_at),
+    WEEK(created_at);
+```
+
+---
+
+### 📊 Query Results (Data Output)
+
+* **Raw Data Output:** 📄 [`trending_with_granular_segments.csv`](./trending_with_granular_segments.csv)
+
+| week_start_date | dtop_sessions | mob_sessions | total_sessions |
+| :---: | :---: | :---: | :---: |
+| **2012-04-15** | 383 | 238 | **621** |
+| **2012-04-22** | 360 | 234 | **594** |
+| **2012-04-29** | 425 | 256 | **681** |
+| **2012-05-06** | 430 | 282 | **712** |
+| **2012-05-13** | 403 | 214 | **617** |
+| **2012-05-20** | **661** | 190 | **851** |
+| **2012-05-27** | 585 | 183 | **768** |
+| **2012-06-03** | 582 | 157 | **739** |
+
+### 💡 Key Business Insights
+
+1. **Desktop Rebound Drives Growth:**
+   * Desktop traffic (`dtop_sessions`) saw a significant surge starting late May (rising from **403** to a peak of **661 sessions** in the week of 2012-05-20), driving total campaign volume back up to **851 sessions**.
+
+2. **Divergent Device Trends:**
+   * While Desktop traffic grew rapidly through late May and early June, Mobile traffic (`mob_sessions`) showed a downward trend (declining from a peak of **282 sessions** down to **157 sessions**).
+
+3. **Next Actionable Steps:**
+   * **Device-Level Bid Optimization:** Continue monitoring device-level volume and evaluate conversion performance separately for Desktop vs. Mobile to optimize bidding strategies and ad spend.
