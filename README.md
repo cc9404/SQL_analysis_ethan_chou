@@ -14,7 +14,7 @@ Welcome to my SQL project hub! This repository contains end-to-end SQL data anal
 ## 🛒 Project 1: Fuzzy Factory (E-Commerce Data & Marketing Analytics)
 
 ### 📌 Overview
-An end-to-end business performance analysis for **Maven Fuzzy Factory** (a synthetic e-commerce retailer). Using advanced MySQL queries, this project evaluates website traffic quality, conversion funnels, channel efficiency, product cross-selling, and customer retention.
+An end-to-end business performance analysis for **Fuzzy Factory** (a synthetic e-commerce retailer). Using advanced MySQL queries, this project evaluates website traffic quality, conversion funnels, channel efficiency, product cross-selling, and customer retention.
 
 ### 🗂️ Analysis Sub-topics & SQL Scripts
 
