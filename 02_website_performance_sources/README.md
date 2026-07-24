@@ -1,6 +1,6 @@
 # 📁 Sub-topic 2: Analyzing Website Performance
 
-This folder contains all SQL scripts and output datasets for analyzing website performance, top viewed pages, entry page behavior, landing page engagement, and conversion funnel optimization for Fuzzy Factory.
+This folder contains all SQL scripts and output datasets for analyzing website performance, top viewed pages, entry page behavior, landing page engagement, and conversion funnel optimization for Maven Fuzzy Factory.
 
 ---
 
