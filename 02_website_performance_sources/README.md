@@ -1,6 +1,6 @@
 # 📂 Sub-topic 2: Analyzing Website Performance
 
-This directory focuses on measuring website performance, landing page engagement, conversion funnel drop-offs, and evaluating A/B test lift for Maven Fuzzy Factory.
+This directory focuses on measuring website performance, landing page engagement, conversion funnel drop-offs, and evaluating A/B test lift for Fuzzy Factory.
 
 ---
 
