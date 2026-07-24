@@ -74,10 +74,8 @@ GROUP BY
 
 1. **Significant Drop Post-Bid Reduction:**
    * Following the bid reduction on **2012-04-15**, weekly session volume for `gsearch / nonbrand` dropped sharply from **983 sessions** (week of April 8) to **621 sessions** (a **~36.8%** decline), indicating high volume sensitivity to ad bids.
-
 2. **Traffic Trend Dynamics:**
    * Traffic remained lower in late April (averaging ~600–680 sessions/week) compared to its peak of **1,152 sessions** in early April.
-
 3. **Next Actionable Steps:**
    * **Continuous Volume Monitoring:** Keep tracking weekly session volume levels to ensure traffic doesn't drop further.
    * **Efficiency Enhancement:** Explore optimization opportunities (e.g., ad creative improvements or landing page experience) to increase campaign efficiency and regain volume profitably.
