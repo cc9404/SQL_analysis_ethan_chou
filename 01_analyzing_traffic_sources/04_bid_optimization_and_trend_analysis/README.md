@@ -80,4 +80,60 @@ GROUP BY
    * **Continuous Volume Monitoring:** Keep tracking weekly session volume levels to ensure traffic doesn't drop further.
    * **Efficiency Enhancement:** Explore optimization opportunities (e.g., ad creative improvements or landing page experience) to increase campaign efficiency and regain volume profitably.
 
+---
 
+## 📊 Part 2: Bid Optimization & Trend Analysis
+
+### 💻 SQL Query & Methodology
+
+* **SQL Script:** 🔗 [`bid_optimization_and_trend_analysis.sql`](./bid_optimization_and_trend_analysis.sql)
+* **Key SQL Techniques:** `YEAR()`, `WEEK()`, `MIN(DATE())`, `COUNT(DISTINCT)`, Date & Time Grouping Aggregation.
+
+```sql
+/*
+Bid optimization and trend analysis
+Goal : Understanding the values of various segments of paid traffic, so that we can optimize the marketing budget
+*/
+USE mavenfuzzyfactory;
+
+SELECT
+    YEAR(created_at) AS year,
+    WEEK(created_at) AS week,
+    MIN(DATE(created_at)) AS week_start,
+    COUNT(DISTINCT website_session_id) AS sessions
+FROM website_sessions
+WHERE website_session_id BETWEEN 100000 AND 115000 -- arbitrary range
+GROUP BY 1, 2;
+```
+
+---
+
+### 📊 Query Results (Data Output)
+
+* **Raw Data Output:** 📄 [`bid_optimization_and_trend_analysis.csv`](./bid_optimization_and_trend_analysis.csv)
+
+| YEAR(created_at) | WEEK(created_at) | week_start | sessions |
+| :---: | :---: | :---: | :---: |
+| 2013 | 22 | 2013-06-05 | 883 |
+| 2013 | 23 | 2013-06-09 | **1,920** |
+| 2013 | 24 | 2013-06-16 | **2,066** |
+| 2013 | 25 | 2013-06-23 | **2,027** |
+| 2013 | 26 | 2013-06-30 | 1,919 |
+| 2013 | 27 | 2013-07-07 | 1,938 |
+| 2013 | 28 | 2013-07-14 | **2,007** |
+| 2013 | 29 | 2013-07-21 | **2,052** |
+| 2013 | 30 | 2013-07-28 | 189 |
+
+---
+
+### 💡 Key Business Insights
+
+1. **Stable High-Volume Baseline:**
+   * During mid-2013, full-week session volume maintained a strong and consistent range of **~1,900 to 2,066 sessions per week**, peaking at **2,066 sessions** in mid-June (week of June 16).
+2. **Partial Week Edge Cases:**
+   * The start week (2013-06-05, 883 sessions) and end week (2013-07-28, 189 sessions) show lower numbers due to session filtering (`session_id BETWEEN 100000 AND 115000`) truncating data mid-week.
+3. **Budget Allocation Takeaway:**
+   * Understanding baseline traffic patterns during full operational weeks ensures that budget allocation models reflect accurate full-week capacity.
+
+---
+   
