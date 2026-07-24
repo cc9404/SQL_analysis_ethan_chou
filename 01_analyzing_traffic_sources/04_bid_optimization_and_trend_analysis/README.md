@@ -51,30 +51,32 @@ GROUP BY
     WEEK(created_at);
 ```
 
+---
+
 ### 📊 Query Results (Data Output)
 
 * **Raw Data Output:** 📄 [`traffic_source_trending.csv`](./traffic_source_trending.csv)
 
 | week_start_date | sessions |
 | :---: | :---: |
-| 2012-03-18 | 26 |
-| 2012-03-25 | 156 |
-| 2012-04-01 | 202 |
-| 2012-04-08 | 206 |
-| **2012-04-15** | **316** |
-| 2012-04-22 | 234 |
-| 2012-04-29 | 291 |
-| 2012-05-06 | 285 |
+| 2012-03-19 | 896 |
+| 2012-03-25 | 956 |
+| 2012-04-01 | 1,152 |
+| **2012-04-08** | **983** |
+| **2012-04-15** | **621** |
+| 2012-04-22 | 594 |
+| 2012-04-29 | 681 |
+| 2012-05-06 | 399 |
 
 ---
 
 ### 💡 Key Business Insights
 
-1. **Immediate Impact of Bid Reduction:**
-   * Traffic peaked at **316 sessions** during the week of **2012-04-15**, immediately after which ad bids were reduced. Following the bid reduction, weekly session volume dropped to **234 sessions** (a ~26% decline).
+1. **Significant Drop Post-Bid Reduction:**
+   * Following the bid reduction on **2012-04-15**, weekly session volume for `gsearch / nonbrand` dropped sharply from **983 sessions** (week of April 8) to **621 sessions** (a **~36.8%** decline), indicating high volume sensitivity to ad bids.
 
-2. **Traffic Stabilization:**
-   * Despite the initial volume drop, traffic quickly stabilized around **280–290 sessions per week** in late April and early May, demonstrating resilient core search demand.
+2. **Traffic Trend Dynamics:**
+   * Traffic remained lower in late April (averaging ~600–680 sessions/week) compared to its peak of **1,152 sessions** in early April.
 
 3. **Next Actionable Steps:**
    * **Continuous Volume Monitoring:** Keep tracking weekly session volume levels to ensure traffic doesn't drop further.
