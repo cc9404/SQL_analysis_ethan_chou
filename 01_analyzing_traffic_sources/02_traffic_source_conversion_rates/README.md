@@ -52,9 +52,7 @@ WHERE website_sessions.created_at < '2012-04-14'
 
 1. **Below Target Benchmark:**
    * The current CVR for `gsearch / nonbrand` stands at **2.88%** (`0.0288`), which falls significantly short of the required **4.0%** threshold for profitability.
-
 2. **Cost Efficiency Impact:**
    * Out of 3,887 sessions, only 112 resulted in orders, confirming that the company is overpaying for low-converting search traffic under current bidding rates.
-
 3. **Next Actionable Step:**
    * **Bid Optimization:** Lower search ad bids for `gsearch / nonbrand` to reduce customer acquisition costs (CAC) and curb overspending on underperforming search campaigns.
