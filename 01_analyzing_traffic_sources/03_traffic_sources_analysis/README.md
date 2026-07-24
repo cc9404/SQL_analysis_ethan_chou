@@ -40,23 +40,18 @@ ORDER BY 2 DESC;
 
 | utm_content | sessions | orders | session_to_order_con_rt |
 | :--- | :---: | :---: | :---: |
-| **`g_ad_heading`** | **878** | **28** | **0.032** |
-| **`b_ad_heading`** | **63** | **1** | **0.016** |
-| **`g_ad_body`** | **18** | **0** | **0.000** |
-| **`b_ad_body`** | **1** | **0** | **0.000** |
+| **`g_ad_1`** | **975** | **35** | **0.036** |
+| *NULL* | 18 | 0 | **0.000** |
+| **`g_ad_2`** | 6 | 0 | **0.000** |
+| **`b_ad_2`** | 2 | 0 | **0.000** |
 
 ---
 
 ## 💡 Key Business Insights
 
-1. **Heading Ads Drive Primary Traffic & Conversions:**
-   * **`g_ad_heading`** (Google Search Heading Ads) is the top performer, generating **878 sessions** and **28 orders** with a **3.2%** CVR (`0.032`).
-
-2. **Inverted Ad Copy Inefficiency:**
-   * Ad body copy variations (`g_ad_body` and `b_ad_body`) show extremely low traffic and **0 converted orders**, indicating that body-focused ad creatives fail to drive purchase intent.
-
-3. **Google vs. Bing Heading Efficiency:**
-   * Google heading ads convert at **3.2%**, which is **2x higher** than Bing heading ads (`b_ad_heading` at **1.6%** / `0.016`).
-
-4. **Next Actionable Step:**
-   * **Creative Allocation:** Reallocate ad budgets away from body-level ad copy toward high-performing heading copy, while re-evaluating Bing ad targeting to improve overall CVR.
+1. **`g_ad_1` is the Core Acquisition Driver:**
+   * **`g_ad_1`** accounts for the vast majority of traffic with **975 sessions** and **35 orders**, achieving a **3.6%** CVR (`0.036`). It generated **100% of all converted orders** in this sample window.
+2. **Underperforming Ad Variations:**
+   * Other ad variations (`g_ad_2` and `b_ad_2`) as well as sessions missing content parameters (*NULL*) contributed negligible session volume (under 20 sessions each) and **0 conversions**.
+3. **Next Actionable Step:**
+   * **Budget Consolidation:** Focus primary search ad spending on **`g_ad_1`** and consider deprecating or pausing non-converting ad creative variations (`g_ad_2`, `b_ad_2`).
