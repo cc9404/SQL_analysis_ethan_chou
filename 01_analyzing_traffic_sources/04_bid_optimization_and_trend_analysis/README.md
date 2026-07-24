@@ -189,9 +189,7 @@ GROUP BY
 
 1. **Desktop Rebound Drives Growth:**
    * Desktop traffic (`dtop_sessions`) saw a significant surge starting late May (rising from **403** to a peak of **661 sessions** in the week of 2012-05-20), driving total campaign volume back up to **851 sessions**.
-
 2. **Divergent Device Trends:**
    * While Desktop traffic grew rapidly through late May and early June, Mobile traffic (`mob_sessions`) showed a downward trend (declining from a peak of **282 sessions** down to **157 sessions**).
-
 3. **Next Actionable Steps:**
    * **Device-Level Bid Optimization:** Continue monitoring device-level volume and evaluate conversion performance separately for Desktop vs. Mobile to optimize bidding strategies and ad spend.
