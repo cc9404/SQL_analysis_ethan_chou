@@ -183,6 +183,8 @@ GROUP BY
 | **2012-05-27** | 585 | 183 | **768** |
 | **2012-06-03** | 582 | 157 | **739** |
 
+---
+
 ### 💡 Key Business Insights
 
 1. **Desktop Rebound Drives Growth:**
