@@ -1,16 +1,23 @@
 # 📈 Module 2: Traffic Source Conversion Rates
 
-This folder contains the SQL analysis and output data for evaluating the Conversion Rates (CVR) across different traffic acquisition sources for Maven Fuzzy Factory.
+This folder contains the SQL analysis and output datasets for evaluating Session-to-Order Conversion Rates (CVR) across primary traffic channels for Maven Fuzzy Factory.
 
 ---
 
-## 📌 Business Question
-* What is the conversion rate (CVR) for primary traffic sources?
-* Which paid search campaigns are driving high-volume traffic with strong purchase intent?
+## 📌 Business Question & Target
+
+* **Context:** Management needs to confirm if paid `gsearch / nonbrand` search traffic is generating sufficient order volume to justify current advertising spend.
+* **Target Metric:** Achieve a **Session-to-Order CVR of $\ge 4\%$** to ensure search campaign profitability.
+* **Timeframe:** Data evaluated prior to `2012-04-14`.
 
 ---
 
-## 📂 Files in this Folder
+## 📐 Conversion Rate Formula
 
-* [`traffic_source_conversion_rates.sql`](./traffic_source_conversion_rates.sql): SQL query joining website sessions with orders to compute session-to-order conversion rate.
-* [`traffic_source_conversion_rates.csv`](./traffic_source_conversion_rates.csv): Summary dataset containing total sessions, total orders, and calculated CVR by source.
+The session-to-order conversion rate is calculated using the following formula:
+
+$$\text{Conversion Rate (CVR)} = \frac{\text{Total Orders}}{\text{Total Website Sessions}} \times 100\%$$
+
+In SQL logic:
+```sql
+COUNT(DISTINCT orders.order_id) / COUNT(DISTINCT website_sessions.website_session_id)
