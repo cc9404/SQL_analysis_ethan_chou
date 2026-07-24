@@ -35,3 +35,13 @@ FROM website_sessions
 WHERE website_sessions.created_at < '2012-04-14'
   AND utm_source = 'gsearch'
   AND utm_campaign = 'nonbrand';
+
+---
+
+## 📊 Query Results (Data Output)
+
+* **Raw Data Output:** 📄 [`traffic_source_conversion_rates.csv`](./traffic_source_conversion_rates.csv)
+
+| sessions | orders | session_to_order_conv_rate |
+| :---: | :---: | :---: |
+| **3,887** | **112** | **0.0288** |
