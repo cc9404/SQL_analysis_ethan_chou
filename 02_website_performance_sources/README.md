@@ -1,6 +1,6 @@
 # 📁 Sub-topic 2: Analyzing Website Performance
 
-This folder contains all SQL scripts and output datasets for analyzing website performance, top viewed pages, entry page behavior, landing page engagement, and conversion funnel optimization for Fuzzy Factory.
+This folder contains all SQL scripts and output datasets for analyzing website performance, top viewed pages, entry page behavior, landing page engagement, and conversion funnel optimization for Maven Fuzzy Factory.
 
 ---
 
@@ -8,6 +8,7 @@ This folder contains all SQL scripts and output datasets for analyzing website p
 
 | # | Module Link | SQL Script(s) | Data Output(s) | Description |
 | :---: | :--- | :--- | :---: | :--- |
-| **1** | [Finding Top Website Pages & Entry Pages](/02_website_performance_sources/01_finding_top_website_pages_and_entry_pages) | [`finding_top_website_pages_and_entry_pages.sql`](/02_website_performance_sources/01_finding_top_website_pages_and_entry_pages/finding_top_website_pages_and_entry_pages.sql) | [`CSV`](/02_website_performance_sources/01_finding_top_website_pages_and_entry_pages/finding_top_website_pages_and_entry_pages.csv) | Identify top landing pages by linking initial session pageviews (IDs < 1000) to measure entry distribution. |
-| **2** | [Finding Most Viewed Website Pages](/02_website_performance_sources/02_finding_most_viewed_website_pages) | [`finding_most_viewed_website_pages.sql`](/02_website_performance_sources/02_finding_most_viewed_website_pages/finding_most_viewed_website_pages.sql) | [`CSV`](/02_website_performance_sources/02_finding_most_viewed_website_pages/finding_most_viewed_website_pages.csv) | Rank most-frequently visited website pages by total pageview volume prior to mid-June 2012. |
-| **3** | [Finding Top Entry Pages](/02_website_performance_sources/03_finding_top_entry_pages) | [`finding_top_entry_pages.sql`](/02_website_performance_sources/03_finding_top_entry_pages/finding_top_entry_pages.sql) | [`CSV`](/02_website_performance_sources/03_finding_top_entry_pages/finding_top_entry_pages.csv) | Determine primary entry points across all sessions to evaluate homepage traffic exposure. |
+| **1** | [Finding Top Website Pages & Entry Pages](./01_finding_top_website_pages_and_entry_pages) | [`finding_top_website_pages_and_entry_pages.sql`](./01_finding_top_website_pages_and_entry_pages/finding_top_website_pages_and_entry_pages.sql) | [`CSV`](./01_finding_top_website_pages_and_entry_pages/finding_top_website_pages_and_entry_pages.csv) | Identify top landing pages by linking initial session pageviews (IDs < 1000) to measure entry distribution. |
+| **2** | [Finding Most Viewed Website Pages](./02_finding_most_viewed_website_pages) | [`finding_most_viewed_website_pages.sql`](./02_finding_most_viewed_website_pages/finding_most_viewed_website_pages.sql) | [`CSV`](./02_finding_most_viewed_website_pages/finding_most_viewed_website_pages.csv) | Rank most-frequently visited website pages by total pageview volume prior to mid-June 2012. |
+| **3** | [Finding Top Entry Pages](./03_finding_top_entry_pages) | [`finding_top_entry_pages.sql`](./03_finding_top_entry_pages/finding_top_entry_pages.sql) | [`CSV`](./03_finding_top_entry_pages/finding_top_entry_pages.csv) | Determine primary entry points across all sessions to evaluate homepage traffic exposure. |
+| **4** | [Calculating Bounce Rates](./04_calculating_bounce_rates) | [`bounce_rate_analysis.sql`](./04_calculating_bounce_rates/bounce_rate_analysis.sql) | [`CSV`](./04_calculating_bounce_rates/final_output.csv) | Measure single-page session bounce rates for homepage traffic prior to mid-June 2012 to quantify initial user engagement. |
