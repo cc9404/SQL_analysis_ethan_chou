@@ -66,6 +66,14 @@ LEFT JOIN website_pageviews
     ON website_pageviews.website_pageview_id = first_pageviews.min_pageview_id
 WHERE website_pageviews.pageview_url IN ('/home','/lander-1');
 ```
+**Sample Output (`first_pageviews.csv`):**
+
+| website_session_id | min_pageview_id |
+| :---: | :---: |
+| 11684 | 23505 |
+| 11685 | 23506 |
+| 11686 | 23507 |
+
 **Sample Output (`nonbrand_test_sessions_w_landing_page.csv`):**
 
 | website_session_id | landing_page |
