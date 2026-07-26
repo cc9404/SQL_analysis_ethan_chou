@@ -6,7 +6,7 @@ This module evaluates an A/B split test comparing the original `/home` landing p
 
 ## 📌 Business Problem & Context
 
-Following the initial bounce rate analysis showing a high ~59% bounce rate on `/home`, the marketing team launched a new landing page (`/lander-1`) to improve engagement[cite: 1, 2]. Management requested an A/B test evaluation to determine whether `/lander-1` successfully reduces bounce rates for paid nonbrand search visitors.
+Following the initial bounce rate analysis showing a high ~59% bounce rate on `/home`, the marketing team launched a new landing page (`/lander-1`) to improve engagement. Management requested an A/B test evaluation to determine whether `/lander-1` successfully reduces bounce rates for paid nonbrand search visitors.
 
 ---
 
