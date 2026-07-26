@@ -115,6 +115,45 @@ HAVING
 | 11688 | `/home` | 1 |
 | 11690 | `/home` | 1 |
 
+---
 
+### 🔹 Step 5: Final Performance Summary & Bounce Rate Comparison
+Compare total sessions, bounced sessions, and bounce rates between `/home` and `/lander-1` to evaluate the A/B test performance.
 
+* **Final Data Output Link:** 📄 [`identify_bounces_n_final_output.csv`](./identify_bounces_n_final_output.csv)
 
+```sql
+SELECT
+    nonbrand_test_sessions_w_landing_page.landing_page,
+    COUNT(DISTINCT nonbrand_test_sessions_w_landing_page.website_session_id) AS sessions,
+    COUNT(DISTINCT nonbrand_test_bounced_sessions.website_session_id) AS bounced_sessions,
+    COUNT(DISTINCT nonbrand_test_bounced_sessions.website_session_id) / 
+    COUNT(DISTINCT nonbrand_test_sessions_w_landing_page.website_session_id) AS bounce_rate
+FROM nonbrand_test_sessions_w_landing_page
+LEFT JOIN nonbrand_test_bounced_sessions
+    ON nonbrand_test_sessions_w_landing_page.website_session_id = nonbrand_test_bounced_sessions.website_session_id
+GROUP BY
+    nonbrand_test_sessions_w_landing_page.landing_page;
+```
+
+**Final Aggregated Output (`identify_bounces_n_final_output.csv`):**
+
+| landing_page | sessions | bounced_sessions | bounce_rate |
+| :---: | :---: | :---: | :---: |
+| `/home` | **2,261** | **1,319** | **58.34%** |
+| `/lander-1` | **2,315** | **1,232** | **53.22%** |
+
+---
+
+## 💡 Key Business Insights
+
+1. **Successful Bounce Rate Reduction:**
+   * `/lander-1` achieved a bounce rate of **53.22%**, compared to **58.34%** for `/home`.
+   * This represents an absolute bounce rate reduction of **5.12%** (a **~8.8% relative improvement** in user retention).
+
+2. **Traffic Engagement Improvement:**
+   * For paid nonbrand search campaigns where customer acquisition cost (CAC) is high, retaining an extra ~5% of visitors significantly boosts marketing spend efficiency.
+
+3. **Recommended Next Steps:**
+   * **Full Rollout:** Direct 100% of paid nonbrand campaign traffic to `/lander-1`.
+   * **Downstream Funnel Analysis:** Track whether these retained visitors convert into completed purchases at a higher overall rate.
