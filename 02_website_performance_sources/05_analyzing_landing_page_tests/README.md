@@ -82,3 +82,39 @@ WHERE website_pageviews.pageview_url IN ('/home','/lander-1');
 | 11685 | `/lander-1` |
 | 11686 | `/lander-1` |
 
+---
+
+### 🔹 Step 4: Identify Single-Page Bounced Sessions
+Count total pageviews for each test session and isolate those with only 1 pageview to identify bounced sessions.
+
+* **Data Output Link:** 📄 [`nonbrand_test_bounced_sessions.csv`](./nonbrand_test_bounced_sessions.csv)
+
+```sql
+CREATE TEMPORARY TABLE nonbrand_test_bounced_sessions
+SELECT 
+    nonbrand_test_sessions_w_landing_page.website_session_id,
+    nonbrand_test_sessions_w_landing_page.landing_page,
+    COUNT(website_pageviews.website_pageview_id) AS count_of_pages_viewd
+FROM nonbrand_test_sessions_w_landing_page
+LEFT JOIN website_pageviews
+    ON website_pageviews.website_session_id = nonbrand_test_sessions_w_landing_page.website_session_id
+GROUP BY
+    nonbrand_test_sessions_w_landing_page.website_session_id,
+    nonbrand_test_sessions_w_landing_page.landing_page
+HAVING 
+    COUNT(website_pageviews.website_pageview_id) = 1;
+```
+
+**Sample Output (`nonbrand_test_bounced_sessions.csv`):**
+
+| website_session_id | landing_page | count_of_pages_viewd |
+| :---: | :---: | :---: |
+| 11684 | `/home` | 1 |
+| 11685 | `/lander-1` | 1 |
+| 11687 | `/home` | 1 |
+| 11688 | `/home` | 1 |
+| 11690 | `/home` | 1 |
+
+
+
+
