@@ -28,3 +28,49 @@ SELECT
 FROM website_pageviews
 WHERE pageview_url = '/lander-1'
   AND created_at IS NOT NULL;
+```
+
+**Sample Output (`first_instance_of_lander1.csv`):**
+
+| first_created_at | first_pageview_id |
+| :---: | :---: |
+| 2012-06-19 00:35:54 | 23504 |
+
+---
+
+### 🔹 Step 2 & 3: Filter Target Test Traffic & Landing Pages
+Restrict analysis to `gsearch nonbrand` sessions after pageview ID 23504 and before July 28, 2012, mapping each session to its initial landing page (`/home` vs `/lander-1`).
+
+* **Data Output Link:** 📄 [`nonbrand_test_sessions_w_landing_page.csv`](./nonbrand_test_sessions_w_landing_page.csv)
+
+```sql
+CREATE TEMPORARY TABLE first_pageviews
+SELECT
+    website_pageviews.website_session_id,
+    MIN(website_pageview_id) AS min_pageview_id
+FROM website_pageviews
+INNER JOIN website_sessions
+    ON website_sessions.website_session_id = website_pageviews.website_session_id
+    AND website_sessions.created_at < '2012-07-28'
+    AND website_pageviews.website_pageview_id > 23504
+    AND website_sessions.utm_source = 'gsearch'
+    AND website_sessions.utm_campaign = 'nonbrand'
+GROUP BY website_pageviews.website_session_id;
+
+CREATE TEMPORARY TABLE nonbrand_test_sessions_w_landing_page
+SELECT 
+    first_pageviews.website_session_id,
+    website_pageviews.pageview_url AS landing_page
+FROM first_pageviews
+LEFT JOIN website_pageviews
+    ON website_pageviews.website_pageview_id = first_pageviews.min_pageview_id
+WHERE website_pageviews.pageview_url IN ('/home','/lander-1');
+```
+**Sample Output (`nonbrand_test_sessions_w_landing_page.csv`):**
+
+| website_session_id | landing_page |
+| :---: | :---: |
+| 11684 | `/home` |
+| 11685 | `/lander-1` |
+| 11686 | `/lander-1` |
+
