@@ -60,8 +60,6 @@ LEFT JOIN website_pageviews
 WHERE website_pageviews.pageview_url = '/home';
 ```
 
----
-
 **Sample Output (`sessions_w_home_landing_page.csv`):**
 
 | website_session_id | landing_page |
