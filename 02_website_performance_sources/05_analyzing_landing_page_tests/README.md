@@ -42,6 +42,7 @@ WHERE pageview_url = '/lander-1'
 Restrict analysis to `gsearch nonbrand` sessions after pageview ID 23504 and before July 28, 2012, mapping each session to its initial landing page (`/home` vs `/lander-1`).
 
 * **Data Output Link:** 📄 [`nonbrand_test_sessions_w_landing_page.csv`](./nonbrand_test_sessions_w_landing_page.csv)
+📄 [`first_pageviews.csv`](./first_pageviews_2.csv)
 
 ```sql
 CREATE TEMPORARY TABLE first_pageviews
