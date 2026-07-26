@@ -132,15 +132,15 @@ LEFT JOIN bounced_sessions
 ## 💡 Key Business Insights
 
 1. **High Baseline Churn:**
-   * Out of **11,044 homepage sessions**, **6,636 sessions bounced** after viewing only the initial landing page[cite: 1].
-   * The initial baseline bounce rate for `/home` stands at **59.18%**[cite: 1].
+   * Out of **11,044 homepage sessions**, **6,636 sessions bounced** after viewing only the initial landing page.
+   * The initial baseline bounce rate for `/home` stands at **59.18%**.
 
 2. **Conversion Opportunity:**
-   * Nearly 6 in 10 visitors left immediately without further interaction[cite: 1]. Improving homepage engagement represents a major opportunity to stop wasting traffic and retain qualified buyers[cite: 1].
+   * Nearly 6 in 10 visitors left immediately without further interaction. Improving homepage engagement represents a major opportunity to stop wasting traffic and retain qualified buyers.
 
 3. **Recommended Next Steps:**
-   * **A/B Split Test:** Launch a new custom landing page (e.g., `/land-1`) featuring clearer product value propositions and stronger call-to-actions (CTAs)[cite: 1].
-   * **Performance Benchmarking:** Run a controlled A/B split test comparing the new landing page against `/home` to evaluate bounce rate reduction[cite: 1].
+   * **A/B Split Test:** Launch a new custom landing page (e.g., `/land-1`) featuring clearer product value propositions and stronger call-to-actions (CTAs).
+   * **Performance Benchmarking:** Run a controlled A/B split test comparing the new landing page against `/home` to evaluate bounce rate reduction.
 
 
 
