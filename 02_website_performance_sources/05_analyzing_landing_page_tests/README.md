@@ -41,8 +41,7 @@ WHERE pageview_url = '/lander-1'
 ### 🔹 Step 2 & 3: Filter Target Test Traffic & Landing Pages
 Restrict analysis to `gsearch nonbrand` sessions after pageview ID 23504 and before July 28, 2012, mapping each session to its initial landing page (`/home` vs `/lander-1`).
 
-* **Data Output Link:** 📄 [`nonbrand_test_sessions_w_landing_page.csv`](./nonbrand_test_sessions_w_landing_page.csv)
-📄 [`first_pageviews.csv`](./first_pageviews_2.csv)
+* **Data Output Link:** 📄 [`first_pageviews.csv`](./first_pageviews_2.csv) 📄 [`nonbrand_test_sessions_w_landing_page.csv`](./nonbrand_test_sessions_w_landing_page.csv)
 
 ```sql
 CREATE TEMPORARY TABLE first_pageviews
