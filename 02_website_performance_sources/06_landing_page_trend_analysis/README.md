@@ -35,3 +35,16 @@ WHERE website_sessions.created_at > '2012-06-01'
   AND website_sessions.utm_source = 'gsearch'
   AND website_sessions.utm_campaign = 'nonbrand'
 GROUP BY website_sessions.website_session_id;
+```
+
+**Sample Output (`step_1.csv`):**
+
+| website_session_id | first_pageview_id | count_pageviews |
+| :---: | :---: | :---: |
+| 9350 | 18598 | 3 |
+| 9351 | 18600 | 3 |
+| 9352 | 18601 | 4 |
+
+---
+
+
