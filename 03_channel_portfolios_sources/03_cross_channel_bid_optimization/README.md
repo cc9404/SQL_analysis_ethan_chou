@@ -12,12 +12,12 @@ After introducing `bsearch` nonbrand campaigns, marketing leadership needs to ev
 
 ## 🛠️ Step-by-Step SQL Analysis & Output Datasets
 
-* **Main SQL Script:** 🔗 [`multi_channel_bidding.sql`](./multi_channel_bidding.sql)[cite: 3]
+* **Main SQL Script:** 🔗 [`multi_channel_bidding.sql`](./multi_channel_bidding.sql)
 
 ---
 
 ### 🔹 Step 1: Session-to-Order Conversion Rate by Device & Channel
-Aggregate nonbrand sessions, orders, and calculate conversion rates (`conv_rate`) grouped by `device_type` and `utm_source`[cite: 3].
+Aggregate nonbrand sessions, orders, and calculate conversion rates (`conv_rate`) grouped by `device_type` and `utm_source`.
 
 ```sql
 SELECT
