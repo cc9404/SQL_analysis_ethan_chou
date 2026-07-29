@@ -17,7 +17,7 @@ With the expansion of paid search marketing onto Bing (`bsearch`), leadership ne
 ---
 
 ### 🔹 Step 1: Weekly Channel Session Aggregation
-Extract weekly start dates (`MIN(DATE(created_at))`) and aggregate total nonbrand session volume alongside specific channel counts for `gsearch` and `bsearch`[cite: 1].
+Extract weekly start dates (`MIN(DATE(created_at))`) and aggregate total nonbrand session volume alongside specific channel counts for `gsearch` and `bsearch`.
 
 ```sql
 SELECT
