@@ -1,4 +1,4 @@
-📁 Sub-topic 3: Analyzing Channel Portfolios
+# 📁 Sub-topic 3: Analyzing Channel Portfolios
 
 This folder contains all SQL scripts and output datasets for analyzing channel portfolios, multi-channel marketing performance, paid search engine comparisons (e.g., gsearch vs. bsearch), organic traffic growth, and cross-channel marketing efficiency for Fuzzy Factory.
 
