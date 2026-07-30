@@ -8,5 +8,5 @@ This folder contains all SQL scripts and output datasets for analyzing temporal 
 
 | # | Module Link | SQL Script(s) | Data Output(s) | Description |
 | :-: | :--- | :--- | :-: | :--- |
-| **1** | [Analyzing Seasonality Trends](./01_analyzing_seasonality_trends) | `analyzing_seasonality_trend.sql` | `CSV` | Track weekly session volume and order totals across 2012 to identify macro seasonality trends, Q4 holiday surges, and revenue growth patterns. |
-| **2** | [Analyzing Business Patterns](./02_analyzing_business_patterns) | `analyzing_business_pattern.sql` | `CSV` | Evaluate average hourly website session volume segmented by day of the week to identify peak user activity windows for customer support staffing and server optimization. |
+| **1** | [Analyzing Seasonality Trends](./01_analyzing_seasonality_trends) | [`analyzing_seasonality.sql`](./01_analyzing_seasonality_trends/analyzing_seasonality.sql) | [`CSV`](./01_analyzing_seasonality_trends/monthly_breakdown.csv) | Track weekly session volume and order totals across 2012 to identify macro seasonality trends, Q4 holiday surges, and revenue growth patterns. |
+| **2** | [Analyzing Business Patterns](./02_analyzing_business_patterns) | [`analyzing_business_pattern.sql`](./02_analyzing_business_patterns/analyzing_business_pattern.sql) | [`CSV`](./02_analyzing_business_patterns/business_pattern.csv) | Evaluate average hourly website session volume segmented by day of the week to identify peak user activity windows for customer support staffing and server optimization. |
