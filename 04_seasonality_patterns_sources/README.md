@@ -1,4 +1,4 @@
-📁 Sub-topic 4: Business Patterns & Seasonality
+# 📁 Sub-topic 4: Business Patterns & Seasonality
 
 This folder contains all SQL scripts and output datasets for analyzing temporal trends, seasonality patterns, holiday traffic surges, and hour-of-day/day-of-week traffic distribution to optimize marketing budgets, server load capacity, and live support staffing for Fuzzy Factory.
 
