@@ -12,7 +12,7 @@ Understanding product sales velocity, revenue trends, and gross margin evolution
 
 ## 🛠️ Step-by-Step SQL Analysis & Output Datasets
 
-* **Main SQL Script:** 🔗 [`product_level_sales_analysis.sql`](./product_level_sales_analysis.sql)[cite: 3]
+* **Main SQL Script:** 🔗 [`product_level_sales_analysis.sql`](./product_level_sales_analysis.sql)
 
 ---
 
