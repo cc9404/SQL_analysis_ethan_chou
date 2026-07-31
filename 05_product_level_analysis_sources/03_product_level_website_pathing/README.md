@@ -30,10 +30,38 @@ FROM website_pageviews
 WHERE created_at < '2013-04-10'
     AND created_at > '2013-01-06'
     AND pageview_url IN ('/the-original-mr-fuzzy', '/the-forever-love-bear');
+```
 
 ---
 
-```
+* **Data Output Link:** 📄 [`step_1.csv`](./step_1.csv)
+
+**Output Data Sample (`step_1.csv`):**
+
+| website_session_id | website_pageview_id | product_page_seen |
+| :---: | :---: | :--- |
+| 63513 | 138944 | `/the-original-mr-fuzzy` |
+| 63515 | 138952 | `/the-original-mr-fuzzy` |
+| 63516 | 138956 | `/the-original-mr-fuzzy` |
+| 63562 | 139079 | `/the-forever-love-bear` |
+| 63580 | 139121 | `/the-forever-love-bear` |
+
+---
+
+* **Data Output Link:** 📄 [`step_2.csv`](./step_2.csv)
+
+**Output Data (`step_2.csv`):**
+
+| pageview_url |
+| :--- |
+| `/cart` |
+| `/shipping` |
+| `/billing-2` |
+| `/thank-you-for-your-order` |
+
+---
+
+
 ### 🔹 Step 3 & 4: Session-Level Funnel Flags
 In these steps, pageview-level URL records are evaluated to flag whether each session progressed through each specific page of the checkout funnel (`/cart`, `/shipping`, `/billing-2`, `/thank-you-for-your-order`). The results are then aggregated at the session level using `MAX()` flags to create a clear, binary status for each session and map them to their respective entry product page (`mrfuzzy` vs. `lovebear`).
 
@@ -75,6 +103,20 @@ GROUP BY
         ELSE 'check logic'
     END;
 ```
+
+---
+
+* **Data Output Link:** 📄 [`step_3_4.csv`](./step_3_4.csv)
+
+**Output Data Sample (`step_3_4.csv`):**
+
+| website_session_id | product_seen | cart_made_it | shipping_made_it | billing_made_it | thankyou_made_it |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 63513 | mrfuzzy | 1 | 1 | 1 | 1 |
+| 63515 | mrfuzzy | 1 | 0 | 0 | 0 |
+| 63516 | mrfuzzy | 0 | 0 | 0 | 0 |
+| 63517 | mrfuzzy | 0 | 0 | 0 | 0 |
+| 63518 | mrfuzzy | 1 | 0 | 0 | 0 |
 
 ---
 
