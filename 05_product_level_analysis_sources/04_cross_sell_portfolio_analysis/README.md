@@ -52,7 +52,7 @@ SELECT * FROM session_seeing_cart;
 
 ### 🔹 Step 2: Identify sessions that viewed another page after the /cart page view to measure top-of-funnel cart click-through rates (CTR).
 
-```
+```sql
 CREATE TEMPORARY TABLE cart_sessions_seeing_another_page
 SELECT
     session_seeing_cart.time_period,
