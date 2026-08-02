@@ -39,7 +39,7 @@ WHERE website_sessions.created_at BETWEEN '2013-11-12' AND '2014-01-12'
 GROUP BY 1;
 ```
 
-## 📊 Summary Performance Comparison (`product_portfolio_expansion.csv`)
+## 📊 Summary Performance Comparison
 
 | time_period | sessions | orders | conv_rate | total_revenue | total_products_sold | average_order_value | products_per_order | revenue_per_session |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
