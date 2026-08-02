@@ -1,0 +1,3 @@
+time_period,sessions,orders,conv_rate,total_revenue,total_products_sold,average_order_value,products_per_order,revenue_per_session
+"A. Pre_Cross_Sell",17343,1055,0.0608,57208.96,1104,54.226502,1.0464,3.298677
+"B. Post_Cross_Sell",13383,940,0.0702,53515.44,1056,56.931319,1.1234,3.998763
