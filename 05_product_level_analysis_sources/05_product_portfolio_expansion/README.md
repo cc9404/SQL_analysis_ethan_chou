@@ -39,7 +39,7 @@ WHERE website_sessions.created_at BETWEEN '2013-11-12' AND '2014-01-12'
 GROUP BY 1;
 ```
 
-## 📊 Summary Performance Comparison
+### 📊 Summary Performance Comparison
 
 | time_period | sessions | orders | conv_rate | total_revenue | total_products_sold | average_order_value | products_per_order | revenue_per_session |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -48,7 +48,7 @@ GROUP BY 1;
 
 ---
 
-## 💡 Key Business Insights
+### 💡 Key Business Insights
 
 1. **Significant Conversion Rate Lift:**
    * Overall website session-to-order conversion rate improved from **6.08%** pre-launch to **7.02%** post-launch, representing a **+0.94 percentage point lift** (+15.4% relative increase).
