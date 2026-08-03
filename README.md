@@ -25,7 +25,7 @@ An end-to-end business performance analysis for **Fuzzy Factory** (a synthetic e
 |     **3. Analyzing Channel Portfolios**     | Multi-channel Synergy & Organic Mix |  [`03_channel_portfolios_sources`](./03_channel_portfolios_sources/) | Paid vs. Direct / Organic Mix, Cross-channel Bid Efficiency |
 |     **4. Business Patterns & Seasonality**     | Temporal Trends & Cyclicality |  [`04_seasonality_patterns_sources`](./04_seasonality_patterns_sources/) | Hour-of-Day / Day-of-Week Traffic, Holiday Sales Volume Spikes |
 |     **5. Product-Level Analysis**     | Product Performance & Cross-selling |  [`05_product_level_analysis_sources`](./05_product_level_analysis_sources/) | Product Sales Velocity, Cross-sell Funnels, Refund Rates, AOV |
-|     **6. User-Level Analysis**     | Retention & Repeat Behavior |  [`06_user_repeat_behavior_sources`](./06_user_repeat_behavior_sources/) | Repeat Visitor Rates, Time-to-Repeat, Repeat CVR |
+|     **6. User-Level Analysis**     | Retention & Repeat Behavior |  [`06_user_level_analysis_sources`](./06_user_level_analysis_sources/) | Repeat Visitor Rates, Time-to-Repeat, Repeat CVR |
 
 ---
 
