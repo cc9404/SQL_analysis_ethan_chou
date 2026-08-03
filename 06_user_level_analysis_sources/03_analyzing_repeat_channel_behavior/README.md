@@ -12,7 +12,7 @@ Understanding which marketing channels drive new customer acquisition versus rep
 
 ## 🛠️ SQL Script & Data Pipeline
 
-* **Main SQL Script:** 🔗 [`analyzing_repeat_channel_behavior.sql`](./analyzing_repeat_channel_behavior.sql)[cite: 3]
+* **Main SQL Script:** 🔗 [`analyzing_repeat_channel_behavior.sql`](./analyzing_repeat_channel_behavior.sql)
 * **Step 1 Output Link:** 📄 [`step_1.csv`](./step_1.csv)
 * **Final Output Link:** 📄 [`final_output.csv`](./final_output.csv)
 
