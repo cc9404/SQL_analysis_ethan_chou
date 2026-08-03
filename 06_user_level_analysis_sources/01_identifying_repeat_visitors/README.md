@@ -87,8 +87,7 @@ ORDER BY 1;
 
 ---
 
-## 📊 Summary Performance Comparison (`final_output.csv`)
-
+## 📊 Summary Performance Comparison
 * **Data Output Link:** 📄 [`final_output.csv`](./final_output.csv)
 
 **Output Data Summary (`final_output.csv`):**
