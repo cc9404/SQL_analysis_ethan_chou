@@ -1,0 +1,10 @@
+utm_source,utm_campaign,http_referer,new_sessions,repeat_sessions
+NULL,NULL,NULL,6591,10564
+NULL,NULL,https://www.gsearch.com,5738,9450
+gsearch,brand,https://www.gsearch.com,5196,8897
+bsearch,brand,https://www.bsearch.com,1236,2130
+NULL,NULL,https://www.bsearch.com,1401,2057
+gsearch,nonbrand,https://www.gsearch.com,100278,0
+bsearch,nonbrand,https://www.bsearch.com,19672,0
+socialbook,pilot,https://www.socialbook.com,5095,0
+socialbook,desktop_targeted,https://www.socialbook.com,2557,0
