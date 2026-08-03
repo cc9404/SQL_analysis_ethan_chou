@@ -6,19 +6,19 @@ This module compares key performance metrics—session volume, conversion rate, 
 
 ## 📌 Business Problem & Context
 
-Understanding the revenue performance and conversion behavior of returning visitors compared to first-time visitors is critical for evaluating long-term customer value (LTV)[cite: 3]. Management requested a comparison to quantify whether repeat visitors convert at a higher rate and generate more revenue per session than first-time visitors[cite: 3].
+Understanding the revenue performance and conversion behavior of returning visitors compared to first-time visitors is critical for evaluating long-term customer value (LTV). Management requested a comparison to quantify whether repeat visitors convert at a higher rate and generate more revenue per session than first-time visitors.
 
 ---
 
 ## 🛠️ SQL Script & Data Pipeline
 
-* **Main SQL Script:** 🔗 [`analyzing_new_and_repeat_conversion_rates.sql`](./analyzing_new_and_repeat_conversion_rates.sql)[cite: 3]
+* **Main SQL Script:** 🔗 [`analyzing_new_and_repeat_conversion_rates.sql`](./analyzing_new_and_repeat_conversion_rates.sql)
 * **Final Output Link:** 📄 [`final_output.csv`](./final_output.csv)
 
 ---
 
 ### 🔹 Step 1: Compare Conversion Rate & RPS Across Sessions
-Left join `website_sessions` with `orders` to aggregate total sessions, conversion rate (`orders / sessions`), and revenue per session (`SUM(price_usd) / sessions`), grouped by `is_repeat_session`[cite: 3].
+Left join `website_sessions` with `orders` to aggregate total sessions, conversion rate (`orders / sessions`), and revenue per session (`SUM(price_usd) / sessions`), grouped by `is_repeat_session`.
 
 ```sql
 -- STEP 1: Aggregate session count, conversion rate, and revenue per session for new vs. repeat visitors
