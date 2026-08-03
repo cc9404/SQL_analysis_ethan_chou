@@ -1,6 +1,6 @@
 # 📄 Core Module 4: Analyzing New and Repeat Conversion Rates
 
-This module compares key performance metrics—session volume, conversion rate, and revenue per session (RPS)—between new and repeat visitors for Fuzzy Factory between **January 1, 2014 and November 8, 2014**[cite: 3].
+This module compares key performance metrics—session volume, conversion rate, and revenue per session (RPS)—between new and repeat visitors for Fuzzy Factory between **January 1, 2014 and November 8, 2014**.
 
 ---
 
