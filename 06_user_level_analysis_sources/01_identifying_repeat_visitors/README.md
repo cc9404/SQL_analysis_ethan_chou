@@ -12,9 +12,9 @@ Understanding customer loyalty and repeat traffic is critical for evaluating bra
 
 ## 🛠️ SQL Script & Data Pipeline
 
-* **Main SQL Script:** 🔗 [`identifying_repeat_visitors.sql`](./identifying_repeat_visitors.sql)[cite: 2]
-* **Step 1 Output Link:** 📄 [`step_1.csv`](./step_1.csv)[cite: 2]
-* **Final Summary Output Link:** 📄 [`final_output.csv`](./final_output.csv)[cite: 2]
+* **Main SQL Script:** 🔗 [`identifying_repeat_visitors.sql`](./identifying_repeat_visitors.sql)
+* **Step 1 Output Link:** 📄 [`step_1.csv`](./step_1.csv)
+* **Final Summary Output Link:** 📄 [`final_output.csv`](./final_output.csv)
 
 ---
 
