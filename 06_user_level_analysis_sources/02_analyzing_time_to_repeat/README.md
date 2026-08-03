@@ -119,7 +119,7 @@ FROM users_first_to_second;
 
 ---
 
-## 📊 Summary Performance Comparison (`final_output.csv`)
+## 📊 Summary Performance Comparison
 
 * **Data Output Link:** 📄 [`final_output.csv`](./final_output.csv)
 
